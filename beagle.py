@@ -90,7 +90,7 @@ class CustomDataset(utils.Dataset):
         subset: Subset to load: train or val
         """
         # Add classes. We have only one class to add.
-        self.add_class("beagle", 1, "beagle")
+        self.add_class("boss", 1, "boss")
 
         # Train or validation dataset?
         assert subset in ["train", "val"]
@@ -98,7 +98,7 @@ class CustomDataset(utils.Dataset):
 
         # Load annotations
         # VGG Image Annotator saves each image in the form:
-        # { 'filename': '28503151_5b5b7ec140_b.jpg',
+        # { 'filename': '2.1.jpg',
         #   'regions': {
         #       '0': {
         #           'region_attributes': {},
