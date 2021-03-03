@@ -114,6 +114,7 @@ class CustomDataset(utils.Dataset):
         annotations1 = json.load(open(os.path.join(dataset_dir, "via_region_data.json")))
         # print(annotations1)
         annotations = list(annotations1.values())  # don't need the dict keys
+        print("annotations:", annotations)
 
         # The VIA tool saves images in the JSON even if they don't have any
         # annotations. Skip unannotated images.
